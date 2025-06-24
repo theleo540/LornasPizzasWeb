@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PizzaDemo - Taste the Best Pizzas</title>
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+  <!-- Main navigation and header -->
+  <header role="banner">
+    <div class="nav-container">
+      <div class="logo" aria-label="PizzaDemo logo">Lorna's Pizzas</div>
+
+      <!-- Botón hamburguesa -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Menú de navegación -->
+      <nav role="navigation" aria-label="Primary Navigation">
+        <ul id="nav-menu">
+          <li><a href="#home" tabindex="0">Home</a></li>
+          <li><a href="#menu" tabindex="0">Menu</a></li>
+          <li><a href="#about" tabindex="0">About</a></li>
+          <li><a href="#contact" tabindex="0">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- Main content of the page -->
+  <main>
+
+    <!-- Hero section with a call to action -->
+    <section class="hero" id="home">
+      <h1>Prueba las mejores pizzas</h1>
+      <p>Descubre tu sabor favorito con nuestros ingredientes frescos y recetas artesanales. Pide tu pizza en línea y
+        disfruta de una entrega rápida.</p>
+      <button class="btn-primary" type="button" aria-label="Order Now">Ordene Ahora</button>
+    </section>
+
+    <!-- Features section with pizza menu -->
+    <section class="features" id="menu" aria-labelledby="menu-heading">
+      <h2 id="menu-heading" class="visually-hidden">Nuestro Menu de Pizzas</h2>
+
+
+      <!-- Hawaiana -->
+      <article class="feature-card" tabindex="0" aria-label="Hawaiana Pizza">
+        <img src="resources/img/hawaiana.png" alt="Pizza Hawaiana" class="feature-image" loading="lazy" />
+        <h3 class="feature-title">Hawaiana</h3>
+        <p class="feature-desc">Pizza clásica con queso manchego, salsa de tomate y piña. Sencilla y deliciosa.</p>
+      </article>
+
+      <!-- Pepperoni -->
+      <article class="feature-card" tabindex="0" aria-label="Pizza Pepperoni">
+        <img src="resources/img/pepperoni.jpg" alt="Pizza Pepperoni" class="feature-image" loading="lazy" />
+        <h3 class="feature-title">Pepperoni</h3>
+        <p class="feature-desc">Jamón, queso y generosas rebanadas de pepperoni. Clásica y sabrosa.</p>
+      </article>
+
+      <!-- Carnes frías -->
+      <article class="feature-card" tabindex="0" aria-label="Pizza Carnes frías">
+        <img src="resources/img/carnes.png" alt="Pizza Carnes Frías" class="feature-image" loading="lazy" />
+        <h3 class="feature-title">Carnes Frías</h3>
+        <p class="feature-desc">Con jamón, queso, salchicha y tocino. Perfecta para amantes de la carne.</p>
+      </article>
+
+      <!-- Champiñón -->
+      <article class="feature-card" tabindex="0" aria-label="Pizza de Champiñón">
+        <img src="resources/img/champinion.jpg" alt="Pizza Champiñón" class="feature-image" loading="lazy" />
+        <h3 class="feature-title">Champiñón</h3>
+        <p class="feature-desc">Jamón, queso y champiñones salteados. Sabor suave y delicioso.</p>
+      </article>
+
+      <!-- Cuatro Estaciones -->
+      <article class="feature-card" tabindex="0" aria-label="Pizza Cuatro Estaciones">
+        <img src="resources/img/estaciones.jpg" alt="Pizza Cuatro Estaciones" class="feature-image" loading="lazy" />
+        <h3 class="feature-title">4 Estaciones</h3>
+        <p class="feature-desc">Jamón, queso, champiñones, piña, pepperoni y chorizo. Una mezcla única.</p>
+      </article>
+
+      <!-- Mixta -->
+      <article class="feature-card" tabindex="0" aria-label="Pizza Mixta">
+        <img src="resources/img/mixta.jpg" alt="Pizza Mixta" class="feature-image" loading="lazy" />
+        <h3 class="feature-title">Mixta</h3>
+        <p class="feature-desc">Jamón, queso, piña, pepperoni, salchicha y tocino. ¡La favorita de todos!</p>
+      </article>
+
+
+    </section>
+
+    <!-- About and Contact sections -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading" class="section-title">Sobre Lorna's Pizzas</h2>
+      <p class="section-text">
+        En Lorna's Pizzas horneamos cada pizza con amor desde nuestra cocina casera. Usamos ingredientes frescos y
+        locales
+        para ofrecerte una experiencia auténtica, sencilla y deliciosa. Nuestra pasión es que cada rebanada te haga
+        sentir como en casa.
+      </p>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading" class="section-title">Contáctanos</h2>
+      <p class="section-text">
+        ¿Se te antoja una pizza? 🍕<br>
+        📲 <strong>Escríbenos o llámanos al</strong>
+        <a href="tel:+529616214697" class="link-primary">961 621 4697</a><br>
+        y nosotros nos encargamos del resto. ¡Calientita, casera y deliciosa!
+      </p>
+
+      <a href="https://wa.me/529616214697" class="btn-primary" target="_blank" rel="noopener"
+        aria-label="Pedir pizza por WhatsApp">
+        Pedir por WhatsApp
+      </a>
+    </section>
+
+
+
+  </main>
+
+  <!-- Footer with copyright information -->
+  <footer role="contentinfo">
+    &copy; 2024 Lorna's Pizzas. All rights reserved.
+  </footer>
+
+
+</body>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('open');
+  });
+
+  // Opcional: cerrar menú al hacer clic en un enlace
+  document.querySelectorAll('#nav-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navMenu.classList.remove('open');
+    });
+  });
+</script>
+
+</html>
