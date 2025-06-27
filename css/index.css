@@ -161,7 +161,7 @@ nav a:focus {
   outline: none;
 }
 
-.contact .btn-primary {
+.btn-primary {
   display: block;
   /* hace que el botón sea bloque */
   margin: 1rem auto;
@@ -170,9 +170,10 @@ nav a:focus {
   /* para que el ancho sea solo el necesario */
 }
 
-.contact .btn-primary:hover,
-.contact .btn-primary:focus {
-  text-decoration: none;  /* quita el subrayado al hover y foco */
+.btn-primary:hover,
+.btn-primary:focus {
+  text-decoration: none;
+  /* quita el subrayado al hover y foco */
 }
 
 
