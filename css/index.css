@@ -6,7 +6,7 @@
   --color-text: #374151;
   --color-text-muted: #6b7280;
   --color-card-bg: #fef2f2;
-  --font-heading: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-heading: 'Poppins';
   --font-body: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --radius: 0.75rem;
   --shadow-light: 0 2px 8px rgb(215 69 69 / 0.2);
@@ -25,6 +25,8 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   margin: 0;
   background-color: var(--color-bg);
@@ -38,6 +40,8 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+
 
 a {
   color: inherit;
@@ -86,11 +90,12 @@ header {
 }
 
 .logo {
-  font-family: var(--font-heading);
+  font-family: cursive;
   font-weight: 700;
   font-size: 1.5rem;
   color: var(--color-primary);
   user-select: none;
+  text-align: center;
 }
 
 nav ul {
@@ -154,7 +159,7 @@ nav a:focus {
 }
 
 .btn-primary:hover,
-.btn-primary:focus{
+.btn-primary:focus {
   background-color: var(--color-primary-dark);
   box-shadow: var(--shadow-hover);
   transform: scale(1.05);
@@ -229,6 +234,7 @@ nav a:focus {
   font-size: 1rem;
   flex-grow: 1;
   margin-bottom: 0;
+  
 }
 
 /* Section Titles */
@@ -298,6 +304,7 @@ footer {
   padding: 0;
   z-index: 1001;
   margin-left: auto;
+  
 }
 
 .hamburger span {
@@ -307,6 +314,7 @@ footer {
   background-color: var(--color-primary);
   border-radius: 2px;
   transition: all 0.3s ease;
+
 }
 
 /* Animación del botón al abrir */
@@ -326,7 +334,7 @@ footer {
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
-
+    
   }
 
   nav ul {
