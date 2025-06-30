@@ -154,7 +154,7 @@ nav a:focus {
 }
 
 .btn-primary:hover,
-.btn-primary:focus {
+.btn-primary:focus{
   background-color: var(--color-primary-dark);
   box-shadow: var(--shadow-hover);
   transform: scale(1.05);
